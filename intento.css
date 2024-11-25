@@ -1,0 +1,225 @@
+/* General */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+p{
+    font-family: sans-serif;
+    font-size: 1.225rem;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.MenuDe {
+  float: right;
+  margin-top:5px;
+  min-height:500px;
+  text-align: center;
+  
+  width:19%;
+}
+.Linea {
+    background-color: rgb(0, 0, 0);
+    float: left;
+    margin-top:20px;
+    min-height:790px;
+    text-align: center;
+    margin-left: 139px;
+    width: 2px;
+}
+.MenuDe h3 {
+    color: rgb(28, 162, 196);
+    text-align: left;
+    padding-left: 35px;
+}
+.MenuDe h4 {
+    text-align: left;
+    padding-left: 35px;
+}
+ol{
+    list-style-type: none;
+}
+ol li {
+    text-align: left; 
+    margin: 0; 
+    padding: 5px 0; 
+}
+.Parrafo { 
+    width:80%;
+    float: left;
+    margin-top: 40px;
+    text-align: left;
+    width: 900px;
+    margin-left: 40px;
+
+}
+.Parrafo img {
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+/* Banner */
+.banner {
+    background-image: url('fondo.png'); /* Asegúrate de que 'fondo.png' exista en tu proyecto */
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+}
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0px;
+    background-color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#flogo{
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.RS, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.RSicon{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-image: que;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+.RSicon:hover{
+    background-color: #99cbd6;
+}
+
+.RSimg{
+    width: 30px;
+}
+.footer-menu-container{
+    list-style-type: none;
+    color: white;
+    font-size: 12px;
+    margin-top: -8px;
+}
+.menu-item{
+    margin: 1rem 1.5 rem;
+    opacity: 0.4;
+    margin-right: 30px;
+    padding-bottom: 20px;
+}
+/*FIN DEL FOOTER*/
+/* Header */
+/* Header */
+.header-outer {
+    height: var(--header-outer-height, 80px); /* Valor por defecto añadido */
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgb(70, 70, 70);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor interno del header */
+.header-inner {
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Separa los elementos principales */
+    width: 100%;
+    padding: 0 1rem; /* Espaciado lateral opcional */
+}
+
+/* Logo */
+.header-logo img {
+    display: block;
+    height: calc(var(--header-inner-height, 80px) - 30px);
+    max-height: 100px; /* Tamaño máximo para evitar desbordamientos */
+}
+
+/* Navegación */
+.header-navigation {
+    display: flex; /* Activa Flexbox para los enlaces */
+    margin-left: auto; /* Empuja la navegación hacia la derecha */
+}
+
+.header-navigation a,
+.header-navigation button {
+    font-size: 1.225rem;
+    color: white;
+    margin-left: 3.5rem; /* Espacio entre los enlaces */
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+/* Hover y efectos */
+.header-navigation a:hover:after,
+.header-navigation button:hover:after {
+    transform: scalex(1);
+}
+
+.header-navigation a:after,
+.header-navigation button:after {
+    transition: 0.25s ease;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: yellow;
+    transform: scalex(0);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .search-container input {
+    width: 0;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: width 0.3s ease-in-out;
+    opacity: 0;
+  }
+  .search-container input.active {
+    width: 200px;
+    opacity: 1;
+  }
+  .search-container img {
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .search-container button {
+    padding: 4px 15px;
+    font-size: 10px;
+    color: #fff;
+    background-color: rgb(70, 70, 70);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .search-container button:hover {
+    background-color: yellow;
+  }
